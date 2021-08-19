@@ -1,7 +1,7 @@
 class ScalaCli < Formula
   desc "Launcher for ScalaCli"
   homepage "https://virtuslabrnd.github.io/scala-cli/"
-  url "https://github.com/VirtuslabRnD/scala-cli/releases/download/latest/scala-x86_64-apple-darwin.gz"
+  url "https://github.com/VirtuslabRnD/scala-cli/releases/download/latest/scala-cli-x86_64-apple-darwin.gz"
   version "latest"
   bottle :unneeded
 
@@ -9,7 +9,7 @@ class ScalaCli < Formula
   depends_on "openjdk" if MacOS.version >= :catalina
 
   def install
-    bin.install "scala-x86_64-apple-darwin" => "scala-cli"
+    bin.install "scala-cli-x86_64-apple-darwin" => "scala-cli"
   end
 
   test do
